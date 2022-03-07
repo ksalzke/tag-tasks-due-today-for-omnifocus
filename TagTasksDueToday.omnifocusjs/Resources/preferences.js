@@ -11,7 +11,7 @@
     const tagNames = flattenedTags.map(t => t.name)
 
     form.addField(new Form.Field.Option('dueTodayTag', '\'Due Today\' tag', flattenedTags, tagNames, dueTodayTag, 'Please select a tag'))
-    
+
     await form.show('Preferences: Agendas', 'OK')
 
     // save preferences

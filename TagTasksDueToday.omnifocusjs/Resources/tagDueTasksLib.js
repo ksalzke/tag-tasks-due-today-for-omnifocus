@@ -1,4 +1,4 @@
-/* global PlugIn Version Formatter Tag Calendar moveTags deleteObject Alert DateComponents */
+/* global PlugIn Version Tag Calendar Alert flattenedTasks */
 (() => {
   const tagDueTasksLib = new PlugIn.Library(new Version('1.0'))
 
@@ -39,11 +39,10 @@
 
   tagDueTasksLib.tagDueTasks = async () => {
     const tag = await tagDueTasksLib.getDueTodayTag()
-    
+
     const tasksDueToday = flattenedTasks.filter(task => task.effectiveDueDate !== null && tagDueTasksLib.isToday(task.effectiveDueDate))
 
     for (const task of tasksDueToday) task.addTag(tag)
-
   }
 
   return tagDueTasksLib
