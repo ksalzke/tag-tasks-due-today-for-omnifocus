@@ -46,7 +46,6 @@
   }
 
   tagDueTasksLib.onComplete = task => {
-    console.log('in onComplete')
     const tag = tagDueTasksLib.dueTodayTag()
     if (tag !== null) task.removeTag(tag)
   }
