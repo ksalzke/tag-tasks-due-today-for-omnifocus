@@ -3,12 +3,20 @@
   "identifier": "com.KaitlinSalzke.TagTasksDueToday",
   "author": "Kaitlin Salzke",
   "description": "An OmniFocus plug-in that tags tasks that are due today.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "actions": [
-    { "identifier": "tagDueTasks", "image": "tag.square.fill" },
-    { "identifier": "preferences", "image": "gear" }
+    {
+      "identifier": "tagDueTasks",
+      "image": "tag.square.fill"
+    },
+    {
+      "identifier": "preferences",
+      "image": "gear"
+    }
   ],
   "libraries": [
-    { "identifier": "tagDueTasksLib"}
+    {
+      "identifier": "tagDueTasksLib"
+    }
   ]
 }
