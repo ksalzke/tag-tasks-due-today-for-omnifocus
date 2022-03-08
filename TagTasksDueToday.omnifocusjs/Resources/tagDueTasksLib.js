@@ -45,5 +45,11 @@
     for (const task of tasksDueToday) task.addTag(tag)
   }
 
+  tagDueTasksLib.onComplete = task => {
+    console.log('in onComplete')
+    const tag = tagDueTasksLib.dueTodayTag()
+    if (tag !== null) task.removeTag(tag)
+  }
+
   return tagDueTasksLib
 })()

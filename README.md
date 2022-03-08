@@ -70,3 +70,7 @@ Returns `true` if the given date is today. Otherwise, returns `false`.
 ## `tagDueTasks ()`
 
 **Asynchronous.** Adds the 'Due Today' tag to any tasks that are due today.
+
+## `onComplete (task: Task)`
+
+Intended to be run on completed tasks and is used by my [Custom Complete plug-in](https://github.com/ksalzke/custom-complete-omnifocus-plugin). Removes the 'Due Soon' tag from the given task. (This is designed to assist with repeating tasks.)
