@@ -12,7 +12,7 @@
 
     form.addField(new Form.Field.Option('dueTodayTag', '\'Due Today\' tag', flattenedTags, tagNames, dueTodayTag, 'Please select a tag'))
 
-    await form.show('Preferences: Agendas', 'OK')
+    await form.show('Preferences: Tag Tasks Due Today', 'OK')
 
     // save preferences
     syncedPrefs.write('dueTodayTagID', form.values.dueTodayTag.id.primaryKey)
