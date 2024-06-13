@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This plug-in is no longer actively maintained, due to changes in more recent versions of OmniFocus: more flexible date rules in perspectives have solved the use case for which this was intended.
+
 # About
 
 This is an Omni Automation plug-in bundle for OmniFocus that tags tasks that are due today.
